@@ -3,7 +3,7 @@
     WebView App 内嵌页面技术 让app 开发使用上Web技术，比Android/IOS 更快
     缺点是性能慢
 
-    在拍照，tabbar，navigationbar 等一些关键的地方又能调用原生微星里的原生组件，提升性能
+    在拍照，tabbar，navigationbar 等一些关键的地方又能调用原生微信里的原生组件，提升性能
 
     WXML  没有div   取代的是view
     WXSS  使用弹性布局
@@ -44,7 +44,3 @@
     })
 - 指令
     wx:for 循环输出指令 将自动循环你给的数据  配合block使用 本身并不输出。
-
-
-- rpx 
-    相对单位 小程序为了适配所有手机，宽度就是750rpx，

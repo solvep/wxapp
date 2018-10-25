@@ -1,0 +1,44 @@
+page {
+  background: #F2F1EE;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #42bd56;
+  color: #ffffff;
+  height: 80rpx;
+  padding: 10rpx 20rpx;
+  z-index: 100;
+}
+
+.search-container input {
+  background: #ffffff;
+  color: #aaaaaa;
+  width: 100%;
+  padding: 5px 10rpx;
+  height: 40rpx;
+  border-radius: 8rpx;
+}
+
+.search-container icon {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  margin-top: -20rpx;
+  right: 40rpx;
+}
+
+.logo {
+  text-align: center;
+  padding-top: 50rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #aaaaaa;
+}
+
+.logo image {
+  width: 250rpx;
+  height: 250rpx;
+}

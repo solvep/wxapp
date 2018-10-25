@@ -10,19 +10,19 @@
     js MVMM
 
 
-    - 架构
-        小程序的架构是极其简单的
-        app.js 是入口文件
-        app.json 是项目文件 pages  找到所有的页面  所有的页面都要在这里注册
-        1. 注册所有文件
-        2. window 设置 App 名字，nacigationBar背景色 文字色
-        3. tabbar 如果app需要底栏的话就设置一个tabbar
-        pages 小程序有页面构成 简单
-        主要代码都在这里
-        1. wxml 写结构
-        2. wxss 样式
-        3. js 写逻辑
-        4. json 文件 页面级别
+- 架构
+    小程序的架构是极其简单的
+    app.js 是入口文件
+    app.json 是项目文件 pages  找到所有的页面  所有的页面都要在这里注册
+    1. 注册所有文件
+    2. window 设置 App 名字，nacigationBar背景色 文字色
+    3. tabbar 如果app需要底栏的话就设置一个tabbar
+    pages 小程序有页面构成 简单
+    主要代码都在这里
+    1. wxml 写结构
+    2. wxss 样式
+    3. js 写逻辑
+    4. json 文件 页面级别
 - 组件
     小程序提供了很多内置功能组件
     swiper 声明式组件 html 标签 功能贫瘠，

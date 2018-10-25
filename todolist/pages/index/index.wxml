@@ -25,7 +25,7 @@
       </block>
       <view class='item' wx:for="{{curLists}}" wx:key='index'>
       <view class='content'>
-        <icon class='icon-small' type="{{item.status=='0'?'circle':'success'}}" size='23' data-item="{{index}}" bindtap='changeTodo'></icon>
+        <icon class='icon-small' type="{{item.status=='0'?'circle':'success'}}" size='23' bindtap='changeTodo'></icon>
         <text class='title'>{{item.text}}</text>
       </view>
       </view>

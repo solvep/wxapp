@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/detail/detail",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#42BD56",
+    "navigationBarTitleText": "豆瓣图书",
+    "navigationBarTextStyle": "white"
+  }
+}

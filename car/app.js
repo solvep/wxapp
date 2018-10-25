@@ -1,39 +1,18 @@
-//app.js
 App({
-  onLaunch: function () {
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
-    // 获取用户信息
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              // 可以将 res 发送给后台解码出 unionId
-              this.globalData.userInfo = res.userInfo
-
-              // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-              // 所以此处加入 callback 以防止这种情况
-              if (this.userInfoReadyCallback) {
-                this.userInfoReadyCallback(res)
-              }
-            }
-          })
-        }
+  onLaunch () {
+    // console.log('应用启动')
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5bcdcea16c5cf5220c328d64/car/car#!method=get',
+      success: (respones) => {
+        // const {slides,vehicles,stories} = respones.data;
+        // console.log(slides, vehicles,stories);
+        Object.assign(this.globalData,respones.data);
+         console.log(this.globalData);
       }
     })
   },
-  globalData: {
-    userInfo: null
+  //全局的数据 App.js 是全局的 在页面的任何地方都可以用到 用户的登陆状态
+  globalData:{
+   motto:'间隔最棒'
   }
 })

@@ -1,0 +1,6 @@
+<scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+        <block wx:for="{{navData}}" wx:for-index="id"  wx:for-item="navItem" wx:key="index">
+            <view class="nav-item {{currentTab == id ?'active':''}}"  data-name="{{navItem.name}}"
+            data-current="{{id}}" bindtap="switchNav">{{navItem.name}}</view>
+        </block>        
+</scroll-view>

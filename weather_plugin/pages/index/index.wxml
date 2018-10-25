@@ -1,0 +1,9 @@
+<view class='calendar'>
+  <calendar eeks-type="full-en" cell-size="30" next="{{false}}" prev="{{false}}" show-more-days="{{true}}" 
+  calendar-style="demo6-calendar" header-style="calendar-header" board-style="calendar-board"/>
+</view>
+<view class="icon">
+  <icon type="edit" color='red'/>
+  <icon type="add"/>
+  <icon type="home"/>
+</view>

@@ -1,0 +1,39 @@
+<template name="templateone">
+  <view class="newList">
+          <navigator class="newList-items" url="../../pages/article/article">
+          <view class="newList-item">
+            <view class="newList-item-l">
+               <text class="newList-item-title">{{title}}</text>
+            </view>
+            <view class="newList-item-r">
+            <image src="{{image[0]}}" ></image>
+            </view>
+          </view>
+          <view class="newList-item-l-dsc">
+               <text class="newList-item-writer">{{writer}}</text>
+               <text class="newList-item-time">{{time}}</text>
+               <text class="newList-item-commentnum">{{commentnum}}评论</text>
+            </view>
+         </navigator>
+  </view>  
+</template>
+<template name="templatetwo">
+  <view class="newList">
+          <navigator class="newList-items1" url="../../pages/article/article">
+            <view class="newList-item-l">
+               <text class="newList-item-title">{{title}}</text>
+            </view>
+            <view class="newList-item-r">
+            <image src="{{image[0]}}" ></image>
+            <image src="{{image[1]}}" ></image>
+            <image src="{{image[2]}}" ></image>
+            </view>
+            <view class="newList-item-l-dsc">
+               <text class="newList-item-writer">{{writer}}</text>
+               <text class="newList-item-time">{{time}}</text>
+               <text class="newList-item-commentnum">{{commentnum}}评论</text>
+            </view>
+         </navigator>
+  </view>  
+</template>
+

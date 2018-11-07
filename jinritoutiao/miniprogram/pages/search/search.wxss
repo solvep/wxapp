@@ -1,0 +1,12 @@
+.headerSearch{
+    width: 100%;
+    height: 60rpx;
+    padding: 10rpx 0;
+    margin-bottom: 30rpx;
+}
+.headerSearch van-col{
+    text-align:center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

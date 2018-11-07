@@ -1,0 +1,47 @@
+<import src="../../components/template/template.wxml"/>
+
+<view class="wrapper">
+    <view class="container">
+      <!-- 头部公有 -->
+      <view class="header">
+          <view class="headercontent"  bindtap="toSearchview">
+              <image src="../../images/search.png" class="search-image" ></image>
+              <text class="search-input">{{searchtitle}}</text>
+              <image src="../../images/hotsearch.png" class="hotsearch-image" ></image>
+          </view>
+      </view> 
+    <view class="category">
+       <scroll-view class="navBar-box" scroll-x="true" style="white-space: nowrap; display:flex ">
+            <view class="cate-list {{curIndex==index?'on':''}}" wx:for="{{category}}" 
+            wx:key="{{item.id}}" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchCategory">
+            {{item.name}}
+            </view>
+       </scroll-view>
+       <view class="more-image" ><image src="../../images/more.png" ></image></view>
+    </view>
+
+
+    <swiper class="notes" style="height: {{clientHeight?clientHeight+'px':'auto'}}" current="{{curIndex}}" 
+     bindchange="swiperchange">
+      <swiper-item class="focus">
+            <view class="focus_content">
+                <text class="focus_content-text">关注的人更新动态会出现在这里</text>
+                <button>关注感兴趣的人</button>
+            </view>
+        </swiper-item>
+        <swiper-item class="category" wx:for="{{articles}}" wx:key="{{item.id}}">
+    <scroll-view class="cate-box" id="{{item.id}}" scroll-y="true" style="height: {{clientHeight?clientHeight+'px':'auto'}}" >
+      <view class="note" wx:for="{{item.notes}}" wx:for-item="note" wx:key="{{index}}">
+         <block wx:if="{{note.image.length < 3 }}">
+         <template is="templateone" data="{{...note}}"></template>
+         </block>
+         <block wx:elif="{{notes.image.length >= 3}} ">
+         <template is="templatetwo" data="{{...note}}"></template>
+         </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+
+    </view>
+</view>

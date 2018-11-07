@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/login/login",
+    "pages/video/video",
+    "pages/plug/plug",
+    "pages/ppvideo/ppvideo"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d03e3e",
+    "navigationBarTitleText": "今日头条",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index_1.png"
+      },
+      {
+        "pagePath": "pages/ppvideo/ppvideo",
+        "text": "西瓜小视频",
+        "iconPath": "images/icon/ppvideo.png",
+        "selectedIconPath": "images/icon/ppvideo_1.png"
+      },
+      {
+        "pagePath": "pages/plug/plug",
+        "text": "发布",
+        "iconPath": "images/icon/plug.png",
+        "selectedIconPath": "images/icon/plug_1.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "小视频",
+        "iconPath": "images/icon/video.png",
+        "selectedIconPath": "images/icon/video_1.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "未登录",
+        "iconPath": "images/icon/login.png",
+        "selectedIconPath": "images/icon/login_1.png"
+      }
+    ]
+  }
+}
